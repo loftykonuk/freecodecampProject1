@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mukta:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to helping me</p>
+<form id="survey-form">
+    <fieldset class="first-fieldset">
+        <label id="name-label" for="name">Name
+        <input id="name" type="text" placeholder="Enter your name" required></label>
+
+        <label id="email-label" for="email">Email
+        <input  id="email" type="email" placeholder="Enter your Email" required> </label>
+        
+        <label id="number-label" for="number">Age(optional)
+        <input id="number" type="number" placeholder="Age" accept="number" required min="18" max="60"> </label>
+
+        <div>    
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" required>
+                <option value="" selected hidden>Select current role</option>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+                <option>Other</option>
+            </select>
+        </div>
+        
+
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="Definitely" class="radio"><input id="Definitely" type="radio" name="radio" value="Definitely" >Definitely</label>
+        <label for="Maybe" class="radio"><input id="Maybe" type="radio" name="radio" value="Maybe">Maybe</label>
+        <label for="Not sure" class="radio"><input id="Not sure" type="radio" name="radio" value="Not-sure">Not sure</label>
+
+        <div>
+            <label>What is your favorite feature of freeCodeCamp?</label>
+            <select id="dropdown" required>
+                <option value="" disabled selected hidden >Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select>
+        </div>
+
+        <div class="checkbox-div">
+            <label>What would you like to see improved? <a>(Check all that apply)</a></label>
+            <label for="Front-end-Projects"><input type="checkbox" value="Front-end-Projects" >Front-end-Projects </label>
+            <label for="Back-end Projects"><input type="checkbox" value="Back-end Projects" >Back-end Projects </label>
+            <label for="Data Visualization"><input type="checkbox" value="Data Visualization" >Data Visualization </label>
+            <label for="Challenges" ><input type="checkbox" value="Challenges" >Challenges </label>
+            <label for="Open Source Community"><input type="checkbox" value="Open Source Community" >Open Source Community</label>
+            <label for="Gitter help rooms"><input type="checkbox" value="Gitter help rooms" >Gitter help rooms</label>
+            <label for="Videos"><input type="checkbox" value="Videos" >Videos </label>
+            <label for="City Meetups"><input type="checkbox" value="City Meetups" >City Meetups </label>
+            <label for="Wiki"><input type="checkbox" value="Wiki" >Wiki </label>
+            <label for="Forum"><input type="checkbox" value="Forum" >Forum </label>
+            <label for="Additional Courses"><input type="checkbox" value="Additional Courses" >Additional Courses </label>
+        </div>
+
+        <div>
+            <label>Any comments or suggestions?</label>
+            <textarea name="textarea" id="textarea" rows="6" cols="87" placeholder="Enter your comment here"></textarea>
+        </div>
+
+
+        <input id="submit" type="submit" value="SUBMIT">
+    </fieldset>
+
+</form>
+
+</body>
+</html>
